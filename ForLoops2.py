@@ -7,7 +7,15 @@ for char in number:
 newNumber = int(cleanedNumber)
 print("The number is {}".format(newNumber))
 
-for state in ["not pinin'", "no more", "a stiff", "bereft of lift"]:
-    print("This parrot is "+ state)
+for state in ["not pinin'", "no more", "a stiff", "bereft of life"]:
+    print("This parrot is " + state)
 
 
+for i in range(0, 101, 5):
+    print("i is " + str(i))
+
+for i in range(1, 13):
+    for j in range(1, 13):
+        print("{1} times {0} is {2}".format(i, j, i*j), end='\t')
+
+    print(" ")
