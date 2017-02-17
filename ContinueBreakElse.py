@@ -13,9 +13,9 @@ for item in shopping_list:
 print("-------------------")
 meal = ["egg", "bacon", "spam", "sausages"]
 
-for items in meal:
+for item in meal:
     if item == 'spam':
         nasty_food_item = item
-        break
+        break 
 if nasty_food_item:
     print("Can't I have anything without spam in it")
