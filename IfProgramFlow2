@@ -1,0 +1,24 @@
+__author__ = "Jack"
+
+age = int(input("What is your age"))
+
+if __name__ == '__main__':
+    if (age < 16) or (age > 65):
+        print("Enjoy your free time!")
+    else:
+        print("Enjoy your day at work!")
+
+# empty values are false, values set to false are true as they are not empty.
+
+x = input("Please enter some text ")
+
+if x:
+    print("You entered '{}'".format(x))
+else:
+    print("You did not enter anything")
+
+if not(x):
+    print("You entered nothing ")
+else:
+    print("You put '{}' ".format(x))
+
