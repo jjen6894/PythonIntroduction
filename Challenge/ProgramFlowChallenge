@@ -1,3 +1,5 @@
+# get an input from the user (ip_address) then count how many characters
+# are in each segment and how many segments there are
 ip_address = input("What is your IP address? ")
 segment = 1
 segment_length = 0
