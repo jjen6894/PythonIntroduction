@@ -1,0 +1,24 @@
+import random
+guess_counter = 0
+highest = 10
+answer = random.randint(1, highest)
+print("Please guess a number between 1 and {}:".format(highest))
+guess = int(input())
+while guess != answer:
+    if guess < answer:
+        print('Please guess higher')
+        guess_counter += 1
+        guess = int(input())
+    else:
+        print('Please guess lower')
+        guess_counter += 1
+        guess = int(input())
+    if guess_counter == 3:
+        print("Out of guesses.. GAME OVER!")
+        break
+
+else:
+    if guess_counter == 0:
+        print("Well done, you got it in one!")
+    else:
+        print("well done !")

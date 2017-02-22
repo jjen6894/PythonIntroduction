@@ -1,8 +1,8 @@
-# i = 0
-# while i < 10:
-#     print(i)
-#     i += 1
-#
+i = 0
+while i < 10:
+    print(i)
+    i += 1
+
 quitter = ['quit', 'Quit']
 options = ['left door, right door, middle door']
 right_option = 'left door'
