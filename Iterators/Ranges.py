@@ -5,6 +5,7 @@ print(my_range)
 print(my_range == range(3, 40, 3))
 print(list(range(0, 5, 2)))
 print(list(range(0, 6, 2)))
+print(list(range(0, 5, 2)) == list(range(0, 6, 2)))
 
 r = decimals
 print(r)
@@ -12,3 +13,5 @@ print(r)
 for i in r[::-2]:
     print(i)
 
+back_string = "egaugnal lufrewop yrev a si nphtyP"
+print(back_string[::-1])
