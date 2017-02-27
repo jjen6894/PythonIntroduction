@@ -12,3 +12,6 @@ metallica = "Ride the Lightening", "Metallica", 1984
 
 print(welcome)
 print(bad[0])
+# welcome[0] = "Welcome to the Dream"
+# tuple object does not support item assignment
+
