@@ -17,3 +17,9 @@ print(bad[0])
 print(welcome)
 welcome = "Welcome to the Dream", welcome[1], welcome[2]
 print(welcome)
+bob = ('9', '8', '7', 'dog', 6, 5, 4)
+print(bob)
+list = ['9', '8', '7', 'dog', 6, 5, 4]
+print(list)
+list.append(3)
+print(list)
