@@ -23,3 +23,14 @@ list = ['9', '8', '7', 'dog', 6, 5, 4]
 print(list)
 list.append(3)
 print(list)
+jack = 'jack'
+print(jack)
+jack = jack[:4] + ', my name is'
+print(jack)
+
+imelda_title, imelda_artist, imelda_year = imelda
+print(imelda_title)
+print(imelda_artist)
+print(imelda_year)
+
+
