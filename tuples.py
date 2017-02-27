@@ -10,8 +10,10 @@ budgie = "Nightflight", "Budgie", 1981
 imelda = "More Mayhem", "Emilda May", 2011
 metallica = "Ride the Lightening", "Metallica", 1984
 
-print(welcome)
+print(metallica)
 print(bad[0])
 # welcome[0] = "Welcome to the Dream"
 # tuple object does not support item assignment
-
+print(welcome)
+welcome = "Welcome to the Dream", welcome[1], welcome[2]
+print(welcome)
