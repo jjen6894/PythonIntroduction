@@ -13,3 +13,7 @@ print(fruit)
 fruit["pear"] = "great with for cider"
 # existing key overight save the new value
 print(fruit)
+
+
+del fruit["lemon"]
+print(fruit)
