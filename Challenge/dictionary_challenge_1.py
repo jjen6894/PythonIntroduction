@@ -12,6 +12,11 @@ exits = {0: {"Q": 0},
          3: {"W": 1, "Q": 0},
          4: {"N": 1, "W": 2, "Q": 0},
          5: {"W": 2, "S": 1, "Q": 0}}
+direction_converter = {"North": "N",
+                       "South": "S",
+                       "West": "W",
+                       "East": "E",
+                       "Quit": "Q"}
 
 loc = 1
 while True:
@@ -24,7 +29,11 @@ while True:
 
     direction = input("Available exits are " + available_exits.upper())
     print()
+
     if direction in exits[loc]:
+        loc = exits[loc][direction]
+    elif direction in direction_converter:
+        direction = direction_converter[direction]
         loc = exits[loc][direction]
     else:
         print("You cannot go in that direction")
