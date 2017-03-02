@@ -30,3 +30,5 @@ while True:
         if dict_key == '':
             print("Please enter something")
         print("We don't have a {}".format(dict_key))
+
+print(fruit.keys())
