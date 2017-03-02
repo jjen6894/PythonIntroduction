@@ -8,16 +8,16 @@ locations = {0: "You are sitting in front of a computer learning Python",
 
 exits = {0: {"Q": 0},
          1: {"W": 2, "E": 3, "N": 5, "S": 4, "Q": 0},
-         2: {"N": 1, "Q": 0},
+         2: {"N": 5, "Q": 0},
          3: {"W": 1, "Q": 0},
          4: {"N": 1, "W": 2, "Q": 0},
          5: {"W": 2, "S": 1, "Q": 0}}
 
-direction_converter = {"North": "N",
-                       "South": "S",
-                       "West": "W",
-                       "East": "E",
-                       "Quit": "Q"}
+direction_converter = {"NORTH": "N",
+                       "SOUTH": "S",
+                       "WEST": "W",
+                       "EAST": "E",
+                       "QUIT": "Q"}
 
 loc = 1
 while True:
@@ -29,11 +29,15 @@ while True:
         break
 
     direction = input("Available exits are " + available_exits.upper())
+    direction = direction.upper()
     print()
     if len(direction) > 1:
-        for word in direction_converter:
-            if word in direction:
+        words = direction.split()
+        for word in words:
+            if word in direction_converter:
                 direction = direction_converter[word]
+                break
+
     if direction in exits[loc]:
         loc = exits[loc][direction]
     else:
