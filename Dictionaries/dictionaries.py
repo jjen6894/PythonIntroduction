@@ -19,16 +19,16 @@ fruit["pear"] = "great with for cider"
 # print(fruit)
 # fruit.clear()
 # print(fruit)
-while True:
-    dict_key = input("Please enter a fruit: ")
-    if dict_key == 'quit':
-        break
-    if dict_key in fruit:
-        description = fruit.get(dict_key)
-        print(description)
-    else:
-        if dict_key == '':
-            print("Please enter something")
-        print("We don't have a {}".format(dict_key))
-
-print(fruit.keys())
+# while True:
+#     dict_key = input("Please enter a fruit: ")
+#     if dict_key == 'quit':
+#         break
+#     if dict_key in fruit:
+#         description = fruit.get(dict_key)
+#         print(description)
+#     else:
+#         if dict_key == '':
+#             print("Please enter something")
+#         print("We don't have a {}".format(dict_key))
+#
+# print(fruit.keys())
