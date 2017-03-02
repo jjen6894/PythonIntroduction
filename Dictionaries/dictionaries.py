@@ -17,3 +17,5 @@ print(fruit)
 
 del fruit["lemon"]
 print(fruit)
+fruit.clear()
+print(fruit)
