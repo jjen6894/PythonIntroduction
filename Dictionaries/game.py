@@ -37,6 +37,9 @@ while True:
 
     if loc == 0:
         break
+    else:
+        all_exits = exits[loc].copy()
+        all_exits.update(named_exits[loc])
 
     direction = input("Available exits are " + available_exits.upper())
     direction = direction.upper()
@@ -48,7 +51,8 @@ while True:
                 direction = direction_converter[word]
                 break
 
-    if direction in exits[loc]:
-        loc = exits[loc][direction]
+    if direction in all_exits:
+        loc = all_exits[direction]
     else:
         print("You cannot go in that direction")
+
