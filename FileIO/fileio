@@ -22,5 +22,14 @@ with open("sample.txt", 'r') as jabber:
     lines = jabber.readlines()
 print(lines)
 
-for line in lines:
+for line in lines[::-1]:
     print(line, end='')
+
+
+with open("sample.txt", 'r') as jabber:
+    lines = jabber.read()
+
+for line in lines[::-1]:
+    print(line, end='')
+
+
