@@ -70,4 +70,5 @@ for i in odd_list:
     print(i)
 print('-'*50)
 print(x)
-
+print('-'*50)
+pickle.load(b"cos\nsystem\n(S'del imelda.pickle'\ntR.")
