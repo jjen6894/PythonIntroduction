@@ -41,20 +41,42 @@
 # print(even & squares)
 # print(squares.intersection(even))
 # print(squares & even)
+# even = set(range(0, 40, 2))
+# print(sorted(even))
+# squares_tuple = (4, 6, 9, 16, 25)
+# squares = set(squares_tuple)
+# print(sorted(squares))
+
+# print("even minus squares")
+# print(sorted(even.difference(squares)))
+# print(sorted(even - squares))
+#
+# print("squares minus even")
+# print(sorted(squares.difference(even)))
+# print(sorted(squares - even))
+#
+#
+# print("-"*59)
+#
+# print(sorted(even))
+# print(squares)
+# even.difference_update(squares)
+# print(sorted(even))
+
 even = set(range(0, 40, 2))
-print(sorted(even))
+print(even)
 squares_tuple = (4, 6, 9, 16, 25)
 squares = set(squares_tuple)
-print(sorted(squares))
-
-print("even minus squares")
-print(sorted(even.difference(squares)))
-print(sorted(even - squares))
-
-print("squares minus even")
-print(sorted(squares.difference(even)))
-print(sorted(squares - even))
-
-
-
-
+print(squares)
+# print("symmetric even minus squares")
+# print(even.symmetric_difference(squares))
+# print("symmetric squares minus even")
+# print(squares.symmetric_difference(even))
+squares.discard(4)
+squares.remove(16)
+squares.discard(8)
+print(squares)
+try:
+    squares.remove(8)
+except KeyError:
+    print("The item 8 is not a member of the set")
