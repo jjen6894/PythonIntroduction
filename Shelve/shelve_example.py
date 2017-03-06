@@ -1,7 +1,7 @@
-import shelve
+import Shelve_example
 
 # with shelve.open('ShelfTest') as fruit:
-fruit = shelve.open('ShelfTest')
+fruit = Shelve_example.open('ShelfTest')
 fruit['orange'] = "a sweet, orange, citrus fruit"
 fruit['apple'] = "good for making cider"
 fruit['lemon'] = "a sour, yellow citrus fruit"
