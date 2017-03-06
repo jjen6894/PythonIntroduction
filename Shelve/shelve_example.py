@@ -7,5 +7,5 @@ with shelve.open('ShelfTest') as fruit:
     fruit['grape'] = "a small sweet fruit growing in bunches"
     fruit['lime'] = "a sour, green citrus fruit"
 
-print(fruit["lemon"])
-print(fruit["grape"])
+    print(fruit["lemon"])
+    print(fruit["grape"])
