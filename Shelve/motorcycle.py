@@ -6,4 +6,8 @@ with shelve.open("bike") as bike:
     bike["colour"] = "red"
     bike["engine_size"] = 250
 
+    del bike['engin_size']
+    del bike['e_size']
     print(bike["engine_size"], bike["colour"])
+    for key in bike:
+        print(key)
