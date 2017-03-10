@@ -1,3 +1,10 @@
+import shelve
+
+game = shelve.open("game")
+loc = game['loc']
+locations = game['locations']
+vocabulary = game['vocabulary']
+
 while True:
     available_exits = ', '.join(locations[loc]["exits"].keys())
 
@@ -22,3 +29,4 @@ while True:
         loc = all_exits[direction]
     else:
         print("You cannot go in that direction")
+game.close()

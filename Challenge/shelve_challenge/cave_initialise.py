@@ -3,7 +3,7 @@ import shelve
 game = shelve.open("game")
 
 
-game['locations'] = {0: {"desc": "You are sitting in front of a computer learning Python",
+game["locations"] = {0: {"desc": "You are sitting in front of a computer learning Python",
                          "exits": {},
                          "named_exits": {}},
              1: {"desc": "You are standing at the end of a road before a small brick building",
@@ -35,4 +35,6 @@ game["vocabulary"] = {"NORTH": "N",
 game["loc"] = 1
 
 print(game["loc"])
+print(game["locations"][0])
+print(game["vocabulary"])
 game.close()
